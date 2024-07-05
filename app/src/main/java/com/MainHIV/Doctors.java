@@ -43,9 +43,30 @@ public class Doctors extends AppCompatActivity {
         });
     }
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        onBackPressed();
-        return true;
+    public void onDiagnosisOverviewClick(View view) {
+        Intent intent = new Intent(Doctors.this, content.class);
+        startActivity(intent);
+        finish();
+    }
+
+
+    public void onCoursesButtonClick(View view) {
+        Intent intent = new Intent(Doctors.this, webinar.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void onTrackerButtonClick(View view) {
+        Intent intent = new Intent(Doctors.this, tracker.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void onDoctorButtonClick(View view) {
+        Intent intent = new Intent(Doctors.this, homepage.class);
+        startActivity(intent);
+        finish();
     }
 }
+
+

@@ -76,7 +76,9 @@
             android:backgroundTint="@color/off_white"
             android:textColor="@color/dark_blue"
             android:textSize="18sp"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:onClick="anony"
+            />
 
     </LinearLayout>
 

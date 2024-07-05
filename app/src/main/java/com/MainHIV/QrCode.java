@@ -24,8 +24,33 @@ public class QrCode extends AppCompatActivity {
 
     // Method to handle "Back to Homepage" button click
     public void onBackToHomePageClick(View view) {
-        Intent intent = new Intent(this, homepage.class); // Replace MainActivity with your homepage activity
+        Intent intent = new Intent(this, tracker.class);
         startActivity(intent);
         finish(); // Close the current activity (QrCode activity)
+    }
+
+    public void onDiagnosisOverviewClick(View view) {
+        Intent intent = new Intent(QrCode.this, content.class);
+        startActivity(intent);
+        finish();
+    }
+
+
+    public void onCoursesButtonClick(View view) {
+        Intent intent = new Intent(QrCode.this, webinar.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void onTrackerButtonClick(View view) {
+        Intent intent = new Intent(QrCode.this, tracker.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void onDoctorButtonClick(View view) {
+        Intent intent = new Intent(QrCode.this, homepage.class);
+        startActivity(intent);
+        finish();
     }
 }

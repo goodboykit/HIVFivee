@@ -32,4 +32,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, signup.class);
         startActivity(intent);
     }
+
+    public void anony(View view) {
+        Intent intent = new Intent(MainActivity.this, webinar.class);
+        startActivity(intent);
+    }
 }
