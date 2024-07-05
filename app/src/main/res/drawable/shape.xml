@@ -1,0 +1,17 @@
+<!-- combined_shape.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background shape for the entire view -->
+    <item android:id="@+id/background_shape">
+        <shape android:shape="rectangle">
+            <corners android:radius="24dp" />
+            <solid android:color="#FFF5E0" />
+        </shape>
+    </item>
+    <!-- Button shape -->
+    <item
+        android:drawable="@drawable/shape2"
+        android:gravity="bottom"
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp" />
+</layer-list>

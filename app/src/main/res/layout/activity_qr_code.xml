@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- Full screen image -->
+    <ImageView
+        android:id="@+id/fullScreenImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/qr"
+        android:layout_above="@+id/navigation_bar" />
+
+    <Button
+        android:id="@+id/backToHomePageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Homepage"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="700dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1A237E"
+        android:onClick="onBackToHomePageClick" />
+
+    <!-- Bottom Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Navigation Item 1: Doctor -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnNav1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/doctor"
+                android:onClick="onDoctorButtonClick"
+                android:scaleType="fitCenter"
+                android:background="?android:selectableItemBackground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/dark_blue"/>
+        </LinearLayout>
+
+        <!-- Navigation Item 2: Courses -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnNav2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/book"
+                android:onClick="onCoursesButtonClick"
+                android:scaleType="fitCenter"
+                android:background="?android:selectableItemBackground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Courses"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/dark_blue"/>
+        </LinearLayout>
+
+        <!-- Navigation Item 3: Tracker -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnNav3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tracker"
+                android:onClick="onTrackerButtonClick"
+                android:scaleType="fitCenter"
+                android:background="?android:selectableItemBackground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tracker"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/dark_blue"/>
+        </LinearLayout>
+
+        <!-- Navigation Item 4: Analysis -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnNav4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/analysis"
+                android:onClick="onAnalysisButtonClick"
+                android:scaleType="fitCenter"
+                android:background="?android:selectableItemBackground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Analysis"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/dark_blue"/>
+        </LinearLayout>
+
+        <!-- Navigation Item 5: Profile -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnNav5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile"
+                android:onClick="onProfileButtonClick"
+                android:scaleType="fitCenter"
+                android:background="?android:selectableItemBackground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/dark_blue"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

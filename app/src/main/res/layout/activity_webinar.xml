@@ -1,0 +1,385 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".webinar">
+
+    <!-- Introduction to HIV Section -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:background="@drawable/intro_hiv_image"
+        android:elevation="4dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092">
+
+        <TextView
+            android:id="@+id/intro_hiv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="90dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Introduction to HIV"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/intro_hiv_subtext"
+            android:layout_width="384dp"
+            android:layout_height="77dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="34dp"
+            android:fontFamily="@font/inter_medium"
+            android:text="This module is for any health care provider who would like to establish core competence in testing for HIV, recognizing acute HIV infection, and linking persons diagnosed with HIV to medical care."
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/learn_more_button"
+            android:layout_width="128dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="#121111"
+            android:onClick="onLearnMoreClick"
+            android:text="Learn more"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <!-- Basic HIV Care Section -->
+
+    <TextView
+        android:id="@+id/courses_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Courses"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/relativeLayout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.379">
+
+        <ImageButton
+            android:id="@+id/all_button"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:background="@null"
+            android:contentDescription="@string/all_button"
+            android:onClick="onAllButtonClick"
+            android:src="@drawable/all" />
+
+        <ImageButton
+            android:id="@+id/newest_button"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@null"
+            android:contentDescription="@string/newest_button"
+            android:onClick="onNewestButtonClick"
+            android:src="@drawable/newest" />
+
+        <ImageButton
+            android:id="@+id/advance_button"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:background="@null"
+            android:contentDescription="@string/advance_button"
+            android:onClick="onAdvanceButtonClick"
+            android:src="@drawable/advance" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/diagnosis_overview"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/diagnosis_image"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:onClick="onDiagnosisOverviewClick"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/diagnosis_overview_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Diagnosis Overview"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/diagnosis_overview_subtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/diagnosis_overview_text"
+            android:layout_marginBottom="8dp"
+            android:text="This module is for any health care provider who would like to establish core competence in testing for HIV, recognizing acute HIV infection, and linking persons diagnosed with HIV to medical care."
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/view_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/inter"
+            android:text="View More"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/basic_hiv_care"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/hiv_care_image"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:onClick="onBasicHivCareClick"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/diagnosis_overview"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/basic_hiv_care_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Basic HIV Primary Care"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/basic_hiv_care_subtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/basic_hiv_care_text"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/inter_medium"
+            android:text="This module is for any health care provider who would like to establish core competence in testing for HIV, recognizing acute HIV infection, and linking persons diagnosed with HIV to medical care."
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/view_more2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/inter"
+            android:text="View More"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <!-- Bottom Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnNav1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/doctor"
+                android:onClick="onDoctorButtonClick"
+                android:scaleType="fitCenter"
+                android:background="?android:selectableItemBackground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/dark_blue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnNav2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/book"
+                android:onClick="onCoursesButtonClick"
+                android:scaleType="fitCenter"
+                android:background="?android:selectableItemBackground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Courses"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/dark_blue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnNav3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tracker"
+                android:onClick="onTrackerButtonClick"
+                android:scaleType="fitCenter"
+                android:background="?android:selectableItemBackground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tracker"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/dark_blue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnNav4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/analysis"
+                android:onClick="onAnalysisButtonClick"
+                android:scaleType="fitCenter"
+                android:background="?android:selectableItemBackground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Analysis"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/dark_blue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnNav5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile"
+                android:onClick="onProfileButtonClick"
+                android:scaleType="fitCenter"
+                android:background="?android:selectableItemBackground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/dark_blue"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".accepted">
+
+
+    <RelativeLayout
+        android:textColor="#0B0303"
+        android:layout_width="wrap_content"
+        android:layout_height="731dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageButton
+            android:id="@+id/closeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="21dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/close"
+            android:onClick="onCloseButtonClick" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="124dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="659dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Privacy World"
+            android:textAlignment="center"
+            android:textColor="#DF1313"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="240dp"
+            android:layout_marginBottom="599dp"
+            android:fontFamily="@font/inter"
+            android:text="Last Update: 14/08/2024"
+            android:textColor="#DF1313"
+            android:textSize="10sp" />
+
+        <TextView
+            android:textColor="#0B0303"
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="119dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="139dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="473dp"
+            android:fontFamily="@font/inter_medium"
+            android:lineSpacingExtra="2sp"
+            android:text="Our Commitment to Your Privacy. We understand the importance of privacy, especially wen it comes to your health information. This privacy Policy explains how we collect, use, and protect your information when you use our HIV mobile application (App)."
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="265dp"
+            android:layout_marginEnd="169dp"
+            android:layout_marginBottom="423dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Terms &amp; Conditions:"
+            android:textAlignment="viewStart"
+            android:textColor="#DF1313"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textColor="#0B0303"
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="323dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="370dp"
+            android:fontFamily="@font/inter_light"
+            android:lineSpacingExtra="2sp"
+            android:text="1. By using the App, you agree to the following terms: "
+            android:textSize="12sp" />
+
+        <TextView
+            android:textColor="#0B0303"
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="584dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="82dp"
+            android:fontFamily="@font/inter_light"
+            android:lineSpacingExtra="2sp"
+            android:text="2. This revised version removes the placeholder text and focuses on the specific needs of an HIV mobile application. It emphasizes user privacy, confidentiality of HIV status, and compliance with HIPAA regulations. "
+            android:textSize="12sp" />
+
+        <TextView
+            android:textColor="#0B0303"
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="373dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="341dp"
+            android:fontFamily="@font/inter_light"
+            android:lineSpacingExtra="2sp"
+            android:text="&#8226; You are 18 years old or Older."
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="403dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="278dp"
+            android:fontFamily="@font/inter_light"
+            android:lineSpacingExtra="2sp"
+            android:text="&#8226; You will not share the App with anyone who does NOT meet the age requirement."
+            android:textColor="#0B0303"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="319dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="462dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="235dp"
+            android:fontFamily="@font/inter_light"
+            android:lineSpacingExtra="2sp"
+            android:text="&#8226; You will not use the App for any illegal or unauthorized purpose."
+            android:textColor="#0B0303"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="511dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="187dp"
+            android:fontFamily="@font/inter_light"
+            android:lineSpacingExtra="2sp"
+            android:text="&#8226; You are responsible for maintaining the confidentiality of your account information."
+            android:textColor="#0B0303"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

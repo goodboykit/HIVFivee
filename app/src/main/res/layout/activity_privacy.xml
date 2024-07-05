@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <!-- Back button -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/back" />
+
+    <!-- Logo -->
+
+    <!-- Title -->
+
+    <!-- Terms of Service Checkbox -->
+
+    <!-- Privacy Policy Checkbox -->
+
+    <!-- Data Processing Checkbox -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="134dp"
+        android:layout_height="133dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="520dp"
+        android:src="@drawable/mini_logo" />
+
+    <TextView
+        android:id="@+id/title"
+        android:textColor="#0B0303"
+        android:layout_width="196dp"
+        android:layout_height="91dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="436dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="HIVFive"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Next Button -->
+
+    <CheckBox
+        android:id="@+id/termsCheckbox"
+        android:layout_width="347dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="295dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="I agree to HIVFive's Terms of Service"
+        android:textColor="#0B0303" />
+
+    <CheckBox
+        android:id="@+id/privacyCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_below="@id/termsCheckbox"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="#0B0303"
+        android:fontFamily="@font/inter_medium"
+        android:text="I have read HIVFive's Privacy Policy" />
+
+    <CheckBox
+        android:id="@+id/dataCheckbox"
+        android:layout_width="238dp"
+        android:layout_height="101dp"
+        android:layout_below="@+id/privacyCheckbox"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-6dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="#0B0303"
+        android:fontFamily="@font/inter_medium"
+        android:text="I agree to HIVFive processing the health data I choose to share with the app, so they can provide service." />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#00796B"
+        android:text="Next"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
