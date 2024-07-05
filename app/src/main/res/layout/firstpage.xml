@@ -1,0 +1,81 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <!-- Logo ImageView -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <!-- Rounded Rectangle View -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_rectangle"/>
+
+
+    <!-- Buttons Container -->
+    <LinearLayout
+        android:id="@+id/buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:padding="80dp">
+
+        <TextView
+            android:id="@+id/textAboveButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experience a smarter way to manage your HIV health"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textStyle="italic"/>
+
+        <!-- Sign In Button -->
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:backgroundTint="@color/off_white"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"/>
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:backgroundTint="@color/off_white"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Sign In as Anonymous Button -->
+        <Button
+            android:id="@+id/btnSignInAnonymous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In as Anonymous"
+            android:backgroundTint="@color/off_white"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
