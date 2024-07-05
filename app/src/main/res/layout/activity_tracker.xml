@@ -323,7 +323,10 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/doctor"
                 android:scaleType="fitCenter"
-                android:background="?android:selectableItemBackground"/>
+                android:background="?android:selectableItemBackground"
+                android:onClick="doci"
+
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -347,7 +350,10 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/book"
                 android:scaleType="fitCenter"
-                android:background="?android:selectableItemBackground"/>
+                android:background="?android:selectableItemBackground"
+                android:onClick="course"
+
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -371,7 +377,10 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/tracker"
                 android:scaleType="fitCenter"
-                android:background="?android:selectableItemBackground"/>
+                android:background="?android:selectableItemBackground"
+                android:onClick="track"
+
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -395,7 +404,10 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/analysis"
                 android:scaleType="fitCenter"
-                android:background="?android:selectableItemBackground"/>
+                android:background="?android:selectableItemBackground"
+                android:onClick="analy"
+
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -419,7 +431,9 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/profile"
                 android:scaleType="fitCenter"
-                android:background="?android:selectableItemBackground"/>
+                android:background="?android:selectableItemBackground"
+
+                />
 
             <TextView
                 android:layout_width="wrap_content"

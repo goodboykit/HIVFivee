@@ -1,6 +1,8 @@
 package com.MainHIV;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
@@ -20,4 +22,30 @@ public class tracker extends AppCompatActivity {
         setContentView(R.layout.activity_tracker);
 
     }
+
+    public void doci(View view) {
+        Intent intent = new Intent(tracker.this, homepage.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void course(View view) {
+        Intent intent = new Intent(tracker.this, content.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void track(View view) {
+        Intent intent = new Intent(tracker.this, tracker.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void analy(View view) {
+        Intent intent = new Intent(tracker.this, tracker.class);
+        startActivity(intent);
+        finish();
+    }
+
+
 }
