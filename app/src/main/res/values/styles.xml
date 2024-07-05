@@ -5,4 +5,24 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="CalendarViewTheme" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorOnPrimary">#000000</item>
+        <item name="colorPrimary">#1A237E</item>
+    </style>
+
+    <style name="CalendarDateTextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="CalendarWeekDayTextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="CalendarViewMonthTextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="CalendarViewArrowColor">
+        <item name="android:tint">@android:color/white</item>
+    </style>
+
 </resources>
