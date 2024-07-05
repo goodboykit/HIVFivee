@@ -121,7 +121,10 @@
             android:textSize="18sp"
             android:layout_marginTop="30dp"
             android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp" />
+            android:layout_marginEnd="50dp"
+            android:onClick="Homelogin"
+
+            />
 
     </LinearLayout>
 
@@ -186,7 +189,10 @@
             android:textColor="@color/dark_blue"
             android:layout_marginTop="16dp"
             android:layout_gravity="center"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:onClick="Signn"
+
+            />
 
     </LinearLayout>
 

@@ -22,9 +22,13 @@ public class login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
 
-    public void gotoHomepage(View view) {
-        Intent intent = new Intent(login.this, homepage.class);
+    public void Homelogin(View view) {
+        Intent intent = new Intent(login.this, tracker.class);
         startActivity(intent);
     }
 
+    public void Signn(View view) {
+        Intent intent = new Intent(login.this, signup.class);
+        startActivity(intent);
+    }
 }

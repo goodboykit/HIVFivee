@@ -94,7 +94,10 @@
             android:layout_marginTop="30dp"
             android:layout_marginStart="60dp"
             android:layout_marginEnd="60dp"
-            android:padding="15dp"/>
+            android:padding="15dp"
+            android:onClick="log"
+
+            />
 
         <TextView
             android:layout_width="wrap_content"

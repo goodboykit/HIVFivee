@@ -1,5 +1,4 @@
 <resources>
-    <resources>
         <string name="app_name">HIVFive</string>
         <string name="all_button">All</string>
         <string name="newest_button">Newest</string>
@@ -9,6 +8,4 @@
         <string name="tracker_button">Tracker</string>
         <string name="analysis_button">Analysis</string>
         <string name="profile_button">Profile</string>
-    </resources>
-
 </resources>
