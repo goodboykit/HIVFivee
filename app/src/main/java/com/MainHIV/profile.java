@@ -14,6 +14,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class profile extends AppCompatActivity {
 
+    private MyDbHelper dbHelper;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,5 +25,11 @@ public class profile extends AppCompatActivity {
 
     }
 
+    public void gotoSignUp(View view) {
+        dbHelper = new MyDbHelper(this);
+        dbHelper.close();
+        Intent intent = new Intent(profile.this, MainActivity.class);
+        startActivity(intent);
+    }
 
 }

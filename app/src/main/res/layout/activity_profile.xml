@@ -29,7 +29,8 @@
         android:layout_marginTop="70dp"
         android:layout_marginEnd="130dp"
         android:contentDescription="Profile Picture"
-        android:src="@drawable/pfp" />
+        android:src="@drawable/pfp"
+        />
 
     <TextView
         android:id="@+id/my_profile"
@@ -44,7 +45,8 @@
         android:text="My Profile"
         android:textAlignment="center"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="@color/dark_blue"/>
 
     <TextView
         android:id="@+id/username"
@@ -58,7 +60,8 @@
         android:layout_marginEnd="130dp"
         android:text="User Name"
         android:textAlignment="center"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textColor="@color/dark_blue"/>
 
     <RelativeLayout
         android:id="@+id/profile_options"
@@ -96,7 +99,8 @@
             android:layout_marginStart="27dp"
             android:layout_marginTop="0dp"
             android:contentDescription="Profile Settings Logos"
-            android:src="@drawable/logos" />
+            android:src="@drawable/logos"
+            android:textColor="@color/dark_blue"/>
 
         <TextView
             android:id="@+id/fullName"
@@ -112,7 +116,8 @@
             android:focusable="true"
             android:padding="8dp"
             android:text="Profile"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textColor="@color/dark_blue"/>
 
         <TextView
             android:id="@+id/favorite_option"
@@ -128,7 +133,8 @@
             android:focusable="true"
             android:padding="8dp"
             android:text="Favorite"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textColor="@color/dark_blue"/>
 
         <TextView
             android:id="@+id/privacy_policy_option"
@@ -144,7 +150,8 @@
             android:focusable="true"
             android:padding="8dp"
             android:text="Privacy Policy"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textColor="@color/dark_blue"/>
 
         <TextView
             android:id="@+id/settings_option"
@@ -160,7 +167,8 @@
             android:focusable="true"
             android:padding="8dp"
             android:text="Settings"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textColor="@color/dark_blue"/>
 
         <TextView
             android:id="@+id/help_option"
@@ -176,7 +184,8 @@
             android:focusable="true"
             android:padding="8dp"
             android:text="Help"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textColor="@color/dark_blue"/>
 
         <Button
             android:id="@+id/logout_button"
@@ -188,7 +197,8 @@
             android:layout_marginStart="112dp"
             android:layout_marginEnd="70dp"
             android:layout_marginBottom="80dp"
-            android:text="Logout" />
+            android:text="Logout"
+            android:onClick="logout"/>
 
 
     </RelativeLayout>

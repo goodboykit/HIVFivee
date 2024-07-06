@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void anony(View view) {
-        Intent intent = new Intent(MainActivity.this, Anonymous.class);
+        Intent intent = new Intent(MainActivity.this, tracker.class);
         startActivity(intent);
     }
 }

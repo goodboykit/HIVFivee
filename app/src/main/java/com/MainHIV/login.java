@@ -48,7 +48,7 @@ public class login extends AppCompatActivity {
     }
 
     public void gotoHomepage() {
-        Intent intent = new Intent(login.this, content.class);
+        Intent intent = new Intent(login.this, tracker.class);
         startActivity(intent);
     }
 }
