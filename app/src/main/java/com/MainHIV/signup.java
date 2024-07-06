@@ -1,6 +1,7 @@
 package com.MainHIV;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -51,6 +52,12 @@ public class signup extends AppCompatActivity {
                 }
             }
         });
+    }
+    
+    public void terms(View view) {
+        Intent intent = new Intent(signup.this, privacy.class);
+        startActivity(intent);
+        finish();
     }
 
     private long addUserToDatabase(String fullName, String email, String phoneNumber, String userPassword) {
