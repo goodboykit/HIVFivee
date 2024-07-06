@@ -36,8 +36,9 @@ public class stats extends AppCompatActivity {
         finish();
     }
 
-    public void analy(View view) {
-        Intent intent = new Intent(stats.this, tracker.class);
+
+    public void profile(View view) {
+        Intent intent = new Intent(stats.this, profile.class);
         startActivity(intent);
         finish();
     }

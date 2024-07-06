@@ -90,12 +90,9 @@ public class tracker extends AppCompatActivity implements View.OnClickListener {
         startActivity(intent);
         finish();
     }
-
-
-    public void cont(View view) {
-        Intent intent = new Intent(tracker.this, stats.class);
+    public void profile(View view) {
+        Intent intent = new Intent(tracker.this, profile.class);
         startActivity(intent);
         finish();
     }
-
 }
