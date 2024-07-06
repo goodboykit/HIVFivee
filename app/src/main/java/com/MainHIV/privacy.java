@@ -33,11 +33,13 @@ public class privacy extends AppCompatActivity {
         nextButton = findViewById(R.id.nextButton);
         backButton = findViewById(R.id.backButton);
 
+
+
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (termsCheckbox.isChecked() && privacyCheckbox.isChecked() && dataCheckbox.isChecked()) {
-                    Intent intent = new Intent(privacy.this, accepted.class);
+                    Intent intent = new Intent(privacy.this, login.class);
                     startActivity(intent);
                 } else {
                 }
@@ -50,5 +52,9 @@ public class privacy extends AppCompatActivity {
                 finish();
             }
         });
+
+      
+
+
     }
 }
