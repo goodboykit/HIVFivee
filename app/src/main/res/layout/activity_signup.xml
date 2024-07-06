@@ -131,7 +131,9 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/fingerprint"
                 android:layout_weight="1"
-                android:background="@null"/>
+                android:background="@null"
+                android:onClick="terms"
+                />
 
         </LinearLayout>
     </LinearLayout>
