@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFF"
+    tools:context=".content">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="80dp"
+        android:text="Content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="105dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diagnosis Overview"
+        android:textSize="22dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        tools:ignore="MissingConstraints"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="105dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Watch the video below to enhance your knowledge in HIV diagnosis, from testing and recognizing acute infection to connecting patients with essential care"
+        android:textSize="13dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="180dp"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="105dp" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="320dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="235dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="405dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:text="Stigma and HIV"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginLeft=
+                    "15dp"
+                android:layout_marginTop="15dp"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft=
+                    "15dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:text="HIV-related stigma can significantly impact the lives of those living with the virus, leading to discrimination, social isolation, and mental health challenges. It is important to address and reduce stigma through education, support, and advocacy."
+                tools:ignore="DuplicateIds" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/stigma" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft=
+                    "15dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:text="HIV in Special Populations"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:text="Certain populations are disproportionately affected by HIV, including men who have sex with men, people who inject drugs, transgender individuals, and sex workers. Tailored prevention and care strategies are necessary to address the unique needs of these groups."
+                tools:ignore="DuplicateIds" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/pq" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:text="Basic HIV Primary Care "
+                android:textSize="16dp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="0dp"
+                android:text="Watch the v ideo below to enhance your konwledge in providing Basic HIV Primary Care, from initial patient assessment and routine care to managing ongoing treatment and support."
+                tools:ignore="DuplicateIds" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/pq" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:text="HIV and Mental Health"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:text="Psychosocial Aspects:
+Stigma and Discrimination: Understanding and addressing the impact on mental health.
+Counseling and Support Services: Providing emotional support and mental health services.
+Managing Mental Health Disorders:
+Common Mental Health Issues: Depression, anxiety, and substance use disorders in HIV-positive individuals.
+Integrated Care Models: Combining mental health and HIV care for comprehensive treatment."
+                tools:ignore="DuplicateIds" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

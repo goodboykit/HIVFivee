@@ -13,6 +13,12 @@
         android:theme="@style/Theme.HIVFive"
         tools:targetApi="31">
         <activity
+            android:name=".AnonymousContent"
+            android:exported="false" />
+        <activity
+            android:name=".Anonymous"
+            android:exported="false" />
+        <activity
             android:name=".content"
             android:exported="false" />
         <activity
