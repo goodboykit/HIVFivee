@@ -22,9 +22,7 @@ public class accepted extends AppCompatActivity {
     }
 
     public void onCloseButtonClick(View view) {
-        // Finish all activities in the current task
         finishAffinity();
-        // Exit the application
         System.exit(0);
     }
 }

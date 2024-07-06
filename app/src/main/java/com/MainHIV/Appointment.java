@@ -23,12 +23,9 @@ public class Appointment extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_appointment);
 
-        // Find the button by ID
         bookAppointmentButton = findViewById(R.id.bookAppointmentButton);
 
-        // Set click listener
         bookAppointmentButton.setOnClickListener(v -> {
-            // Replace NextActivity.class with the activity you want to navigate to
             Intent intent = new Intent(Appointment.this, QrCode.class);
             startActivity(intent);
         });

@@ -342,7 +342,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/analysis"
-                android:onClick="onAnalysisButtonClick"
+                android:onClick="stats"
                 android:scaleType="fitCenter"
                 android:background="?android:selectableItemBackground"/>
 

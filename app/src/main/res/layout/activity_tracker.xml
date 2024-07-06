@@ -60,7 +60,8 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/mentomen"
                         android:background="@color/white"
-                        android:padding="12dp"/>
+                        android:padding="12dp"
+                        android:onClick="onButtonClick"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -85,7 +86,8 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/womentowomen"
                         android:background="@color/white"
-                        android:padding="12dp"/>
+                        android:padding="12dp"
+                        android:onClick="onButtonClick"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -109,8 +111,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/womentomen"
-                        android:backgroundTint="@color/white"
-                        android:padding="12dp"/>
+                        android:background="@color/white"
+                        android:padding="12dp"
+                        android:onClick="onButtonClick"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -151,8 +154,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/anal"
-                        android:backgroundTint="@color/white"
-                        android:padding="12dp"/>
+                        android:background="@color/white"
+                        android:padding="12dp"
+                        android:onClick="onButtonClick"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -176,8 +180,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/oral"
-                        android:backgroundTint="@color/white"
-                        android:padding="12dp"/>
+                        android:background="@color/white"
+                        android:padding="12dp"
+                        android:onClick="onButtonClick"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -219,8 +224,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/protektado"
-                        android:backgroundTint="@color/white"
-                        android:padding="12dp"/>
+                        android:background="@color/white"
+                        android:padding="12dp"
+                        android:onClick="onButtonClick"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -244,8 +250,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/unprotected"
-                        android:backgroundTint="@color/white"
-                        android:padding="12dp"/>
+                        android:background="@color/white"
+                        android:padding="12dp"
+                        android:onClick="onButtonClick"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -269,8 +276,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/withdrawal"
-                        android:backgroundTint="@color/white"
-                        android:padding="12dp"/>
+                        android:background="@color/white"
+                        android:padding="12dp"
+                        android:onClick="onButtonClick"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -396,7 +404,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:onClick="stats">
 
             <ImageButton
                 android:id="@+id/btnNav4"
@@ -405,7 +414,7 @@
                 android:src="@drawable/analysis"
                 android:scaleType="fitCenter"
                 android:background="?android:selectableItemBackground"
-                android:onClick="analy"
+                android:onClick="stats"
 
                 />
 
