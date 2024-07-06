@@ -304,7 +304,9 @@
                     android:text="Continue"
                     android:backgroundTint="@color/dark_blue"
                     android:padding="10dp"
-                    android:textColor="@android:color/white"/>
+                    android:textColor="@android:color/white"
+                    android:onClick="cont"
+                    />
             </LinearLayout>
 
         </LinearLayout>
