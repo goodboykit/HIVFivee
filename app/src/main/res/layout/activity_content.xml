@@ -66,8 +66,8 @@
 
     <VideoView
         android:id="@+id/videoView"
-        android:layout_width="357dp"
-        android:layout_height="114dp"
+        android:layout_width="340dp"
+        android:layout_height="105dp"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="235dp" />
 
