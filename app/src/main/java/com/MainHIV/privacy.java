@@ -39,7 +39,7 @@ public class privacy extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (termsCheckbox.isChecked() && privacyCheckbox.isChecked() && dataCheckbox.isChecked()) {
-                    Intent intent = new Intent(privacy.this, login.class);
+                    Intent intent = new Intent(privacy.this, accepted.class);
                     startActivity(intent);
                 } else {
                 }
@@ -53,7 +53,7 @@ public class privacy extends AppCompatActivity {
             }
         });
 
-      
+
 
 
     }

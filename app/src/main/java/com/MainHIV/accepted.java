@@ -1,5 +1,6 @@
 package com.MainHIV;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -20,9 +21,10 @@ public class accepted extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_accepted);
     }
-
-    public void onCloseButtonClick(View view) {
-        finishAffinity();
-        System.exit(0);
+    
+    public void onCloseButtonClick() {
+        Intent intent = new Intent(accepted.this, login.class);
+        startActivity(intent);
+        finish();
     }
 }
