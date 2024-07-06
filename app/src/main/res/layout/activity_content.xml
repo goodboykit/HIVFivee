@@ -8,6 +8,22 @@
     android:background="#FFF"
     tools:context=".content">
 
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_media_previous"
+        android:contentDescription="Back"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="20dp"
+        android:onClick="click"
+        />
+
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
