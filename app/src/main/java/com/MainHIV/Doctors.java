@@ -70,6 +70,12 @@ public class Doctors extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
+    public void profile(View view) {
+        Intent intent = new Intent(Doctors.this, profile.class);
+        startActivity(intent);
+        finish();
+    }
 }
 
 

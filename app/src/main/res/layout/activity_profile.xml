@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    android:background="#ffffff"
+    tools:context=".profile">
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Back Arrow"
+        android:src="@drawable/back" />
+
+
+    <ImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="130dp"
+        android:contentDescription="Profile Picture"
+        android:src="@drawable/pfp" />
+
+    <TextView
+        android:id="@+id/my_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="100dp"
+        android:text="My Profile"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="130dp"
+        android:text="User Name"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/profile_options"
+        android:layout_width="match_parent"
+        android:layout_height="495dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="232dp"
+        android:layout_marginBottom="4dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <!-- Logos -->
+
+        <!-- Profile Option -->
+
+        <!-- Favorite Option -->
+
+        <!-- Payment Method Option -->
+
+        <!-- Privacy Policy Option -->
+
+        <!-- Settings Option -->
+
+        <!-- Help Option -->
+
+        <!-- Logout Option -->
+
+        <ImageView
+            android:id="@+id/logos"
+            android:layout_width="wrap_content"
+            android:layout_height="447dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="0dp"
+            android:contentDescription="Profile Settings Logos"
+            android:src="@drawable/logos" />
+
+        <TextView
+            android:id="@+id/fullName"
+            android:layout_width="198dp"
+            android:layout_height="54dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:text="Profile"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/favorite_option"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="111dp"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:text="Favorite"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/privacy_policy_option"
+            android:layout_width="256dp"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="173dp"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:text="Privacy Policy"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/settings_option"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="236dp"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:text="Settings"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/help_option"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="298dp"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:text="Help"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="112dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="80dp"
+            android:text="Logout" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
