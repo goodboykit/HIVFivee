@@ -33,6 +33,8 @@ public class privacy extends AppCompatActivity {
         nextButton = findViewById(R.id.nextButton);
         backButton = findViewById(R.id.backButton);
 
+
+
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,5 +52,9 @@ public class privacy extends AppCompatActivity {
                 finish();
             }
         });
+
+
+
+
     }
 }
