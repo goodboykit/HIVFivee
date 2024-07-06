@@ -22,11 +22,10 @@ public class QrCode extends AppCompatActivity {
         setContentView(R.layout.activity_qr_code);
     }
 
-    // Method to handle "Back to Homepage" button click
     public void onBackToHomePageClick(View view) {
         Intent intent = new Intent(this, tracker.class);
         startActivity(intent);
-        finish(); // Close the current activity (QrCode activity)
+        finish();
     }
 
     public void onDiagnosisOverviewClick(View view) {

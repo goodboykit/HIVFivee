@@ -26,14 +26,11 @@ public class Doctors extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        // Enable the back button on the toolbar
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        // Locate the "Book appointment" button
         Button bookAppointmentButton = findViewById(R.id.bookAppointmentButton);
 
-        // Set OnClickListener to handle button click
         bookAppointmentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,6 +61,12 @@ public class Doctors extends AppCompatActivity {
 
     public void onDoctorButtonClick(View view) {
         Intent intent = new Intent(Doctors.this, homepage.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void stats(View view) {
+        Intent intent = new Intent(Doctors.this, stats.class);
         startActivity(intent);
         finish();
     }

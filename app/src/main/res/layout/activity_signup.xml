@@ -33,7 +33,6 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp">
 
-        <!-- Username EditText -->
         <EditText
             android:id="@+id/etUsername"
             android:layout_width="match_parent"
@@ -107,14 +106,12 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"/>
 
-        <!-- Horizontal LinearLayout for ImageButtons -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="10dp">
 
-            <!-- ImageButton 1 -->
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -122,7 +119,6 @@
                 android:layout_weight="1"
                 android:background="@null" />
 
-            <!-- ImageButton 2 -->
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -130,7 +126,6 @@
                 android:layout_weight="1"
                 android:background="@null"/>
 
-            <!-- ImageButton 3 -->
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

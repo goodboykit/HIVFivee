@@ -40,7 +40,6 @@ public class privacy extends AppCompatActivity {
                     Intent intent = new Intent(privacy.this, accepted.class);
                     startActivity(intent);
                 } else {
-                    // Show a message to the user to check all the boxes
                 }
             }
         });
@@ -48,7 +47,6 @@ public class privacy extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Handle back button click, usually finish() to go to the previous activity
                 finish();
             }
         });

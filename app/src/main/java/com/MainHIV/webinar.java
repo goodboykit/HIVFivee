@@ -47,4 +47,10 @@ public class webinar extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
+    public void stats(View view) {
+        Intent intent = new Intent(webinar.this, stats.class);
+        startActivity(intent);
+        finish();
+    }
 }

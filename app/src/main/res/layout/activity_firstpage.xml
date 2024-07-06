@@ -6,7 +6,6 @@
     tools:context=".MainActivity"
     android:background="@color/white">
 
-    <!-- Logo ImageView -->
     <ImageView
         android:id="@+id/logoImageView"
         android:layout_width="wrap_content"
@@ -15,7 +14,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"/>
 
-    <!-- Rounded Rectangle View -->
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="400dp"
@@ -23,7 +21,6 @@
         android:background="@drawable/rounded_rectangle"/>
 
 
-    <!-- Buttons Container -->
     <LinearLayout
         android:id="@+id/buttons_container"
         android:layout_width="match_parent"
@@ -43,7 +40,6 @@
             android:gravity="center"
             android:textStyle="italic"/>
 
-        <!-- Sign In Button -->
         <Button
             android:id="@+id/btnSignIn"
             android:layout_width="match_parent"
@@ -55,7 +51,6 @@
             android:layout_marginTop="30dp"
             android:onClick="gotoLogIn"/>
 
-        <!-- Sign Up Button -->
         <Button
             android:id="@+id/btnSignUp"
             android:layout_width="match_parent"
@@ -67,7 +62,6 @@
             android:layout_marginTop="10dp"
             android:onClick="gotoSignUp"/>
 
-        <!-- Sign In as Anonymous Button -->
         <Button
             android:id="@+id/btnSignInAnonymous"
             android:layout_width="match_parent"

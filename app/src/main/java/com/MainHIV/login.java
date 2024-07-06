@@ -31,13 +31,17 @@ public class login extends AppCompatActivity {
         btnLogIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String username = etUsername.getText().toString();
-                String password = etPassword.getText().toString();
+                String username = etUsername.getText().toString().trim();
+                String password = etPassword.getText().toString().trim();
 
-                if (dbHelper.checkUser(username, password)) {
-                    gotoHomepage();
+                if (username.isEmpty() || password.isEmpty()) {
+                    Toast.makeText(login.this, "Username and password are required", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(login.this, "Invalid username or password", Toast.LENGTH_SHORT).show();
+                    if (dbHelper.checkUser(username, password)) {
+                        gotoHomepage();
+                    } else {
+                        Toast.makeText(login.this, "Invalid username or password", Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
         });
