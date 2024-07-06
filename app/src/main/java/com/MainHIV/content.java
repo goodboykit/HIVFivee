@@ -6,9 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.ImageButton;
 import android.widget.VideoView;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class content extends AppCompatActivity {
@@ -20,23 +18,14 @@ public class content extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_content);
 
-        // Set up the VideoView
+        // Initialize VideoView and set the video path
         VideoView videoView = findViewById(R.id.videoView);
         String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.vid;
         Uri uri = Uri.parse(videoPath);
         videoView.setVideoURI(uri);
-        videoView.start();
 
-        // Set up the back button
-        ImageButton backButton = findViewById(R.id.backButton);
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(content.this, tracker.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+        // Start the video
+        videoView.start();
     }
 
     public void click(View view) {
